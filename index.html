@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Align Hero Section</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+    </style>
+</head>
+<body class="h-screen w-full overflow-hidden relative bg-gray-900 text-white">
+
+    <!-- Background Image -->
+    <div class="absolute inset-0 z-0">
+        <img src="https://imolwncbqxugevwmleed.supabase.co/storage/v1/object/public/public-assets/hero-images/f8783a23-610f-4010-8996-a3064ad5689d/hero-2-img-0-1770060401294.png" alt="Office Workspace Background" class="w-full h-full object-cover opacity-80">
+        <!-- Dark overlay to ensure text contrast matches the design feel -->
+        <div class="absolute inset-0 bg-black/30"></div>
+    </div>
+
+    <!-- Navigation Bar -->
+    <header class="absolute top-0 left-0 w-full z-50 flex justify-between items-center px-6 py-6 md:px-10 md:py-8">
+        <!-- Hamburger Menu -->
+        <button class="text-white hover:opacity-70 transition-opacity">
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="square" stroke-linejoin="round">
+                <line x1="3" y1="12" x2="21" y2="12"></line>
+                <line x1="3" y1="6" x2="21" y2="6"></line>
+                <line x1="3" y1="18" x2="21" y2="18"></line>
+            </svg>
+        </button>
+
+        <!-- Centered Navigation Links -->
+        <nav class="hidden md:flex items-center space-x-8 text-sm md:text-base font-normal tracking-wide absolute left-1/2 transform -translate-x-1/2">
+            <a href="#" class="text-white/60 hover:text-white transition-colors">Home</a>
+            <a href="#" class="text-white hover:text-white/80 transition-colors">Solutions</a>
+            <a href="#" class="text-white hover:text-white/80 transition-colors">About</a>
+            <a href="#" class="text-white hover:text-white/80 transition-colors">Network</a>
+            <a href="#" class="text-white hover:text-white/80 transition-colors">Company</a>
+            <a href="#" class="text-white hover:text-white/80 transition-colors">Docs</a>
+        </nav>
+
+        <!-- Contact Link -->
+        <a href="#" class="text-white text-sm md:text-base font-normal tracking-wide hover:opacity-70 transition-opacity">Contact</a>
+    </header>
+
+    <!-- Middle Content (Slider Info & Line) -->
+    <div class="absolute top-1/2 left-0 w-full z-40 transform -translate-y-1/2 flex flex-col">
+        <!-- Info Text Row -->
+        <div class="flex justify-between items-end px-6 md:px-10 pb-4 md:pb-6 text-sm md:text-lg font-normal tracking-wide">
+            <div class="flex items-center gap-8 md:gap-12">
+                <span class="font-medium">1 / 6</span>
+                <span>Unified payments for fintech.</span>
+            </div>
+            <a href="#" class="hover:opacity-70 transition-opacity">Explore the API</a>
+        </div>
+        
+        <!-- Horizontal Line -->
+        <div class="w-full h-[1px] bg-white/40"></div>
+    </div>
+
+    <!-- Bottom Content (Logo & Arrow) -->
+    <div class="absolute bottom-0 left-0 w-full z-40 px-6 md:px-10 pb-4 md:pb-6 flex justify-between items-end">
+        <!-- Large Branding Text -->
+        <h1 class="text-[17vw] leading-[0.75] font-bold tracking-tighter -ml-[0.5vw] mb-[-1vw]">
+            align
+        </h1>
+
+        <!-- Down Arrow -->
+        <div class="mb-2 md:mb-4 animate-bounce">
+            <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M12 5v14M19 12l-7 7-7-7"/>
+            </svg>
+        </div>
+    </div>
+
+</body>
+</html>
